@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Add Custom Bookmarks",
+  "version": "1.0",
+  "description": "Easily add custom bookmarks with organized folder selection and drag-and-drop functionality.",
+  "author": "Your Name",
+  "permissions": [
+    "bookmarks",
+    "storage", 
+    "activeTab",
+    "scripting"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Add Custom Bookmarks",
+    "default_icon": "icons/icon48.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "short_name": "Custom Bookmarks",
+  "minimum_chrome_version": "89"
+}

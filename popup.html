@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Bookmarks</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Add Bookmarks</h1>
+        <a href="options.html">Options</a>
+    </div>
+
+    <textarea id="links-input" rows="10" placeholder="Enter each URL on a new line. For URLs with Titles add them with comma(,) eg: google.com, Google"></textarea>
+
+    <div class="folder-select">
+        <label for="folder-dropdown">Select Folder:</label>
+        <select id="folder-dropdown"></select>
+    </div>
+
+    <button id="save-btn">Save to Bookmarks</button>
+
+    <div id="error-message" style="display: none;"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

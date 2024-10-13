@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Options</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Extension Settings</h1>
+        <a href="popup.html">Go Back</a>
+    </div>
+
+    <div class="option-section">
+        <label for="default-folder">Default Bookmark Folder</label>
+        <select id="default-folder">
+            <option value="">Select a folder</option>
+            <!-- Dynamically populated from bookmarks -->
+        </select>
+    </div>
+
+    <div class="option-section">
+        <label for="notifications">Enable Notifications</label>
+        <input type="checkbox" id="notifications" checked>
+    </div>
+
+    <button class="button" id="save-options-btn">Save Options</button>
+    <div id="status" class="message"></div>
+
+    <script src="options.js"></script>
+
+</body>
+
+</html>
